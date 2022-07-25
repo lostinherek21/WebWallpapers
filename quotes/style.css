@@ -1,0 +1,128 @@
+@font-face {
+  font-family: 'sarasa-fixed-hc';
+  src: local("./assests/fonts/sarasa-fixed-hc-regular.ttf");
+  font-weight: lighter;
+}
+
+
+body {
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+
+}
+
+
+/* body::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364); 
+  clip-path:circle(20% at right 90%);
+}
+body::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364); 
+  clip-path:circle(15% at left 8%);
+} */
+
+.container {
+  height: 100vh;
+  background: #161616;
+  overflow: hidden;
+}
+
+.container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("./assests/images/ruinsBuilding2.png");
+  background-size: cover;
+
+  filter: blur(2px);
+}
+
+.clock {
+  z-index: 1;
+  margin: 0px;
+  height: 5%;
+  text-align: center;
+  position: relative;
+}
+
+.clock time{
+  color: rgba(146, 146, 146, 0.339);
+}
+
+.description {
+  margin-top: -100px;
+  height: 5%;
+  font-family: 'Corbel',sans-serif;
+  font-size: .7rem;
+}
+
+.description p {
+  margin: 0;
+  text-align: center;
+  position: relative;
+  top: 60%;
+  color: rgba(146, 146, 146, 0.339);
+  font-family: 'Corbel',sans-serif;
+}
+
+.cards.flex {
+  height: 90%;
+  color: rgb(255, 255, 255);
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.card {
+  width: 80%;
+  margin: 10% 30%;
+  padding: 3% 0;
+  overflow: hidden;
+
+  text-align: center;
+  font-size: .9rem;
+  text-shadow: 1px 1px 1px rgb(210, 217, 252);
+
+  /* background and border*/
+  background-color: rgba(80, 57, 57, 0.05);
+  backdrop-filter: blur(1px);
+  filter: drop-shadow(2px 2px 1.5px rgba(209, 207, 209, 0.431));
+
+  border-radius: 5px;
+  
+  
+  box-shadow: 1px 1px 1px #495C83;
+}
+
+.card > cite {
+  box-sizing: border-box;
+  display: inline-block;
+
+  width: 100%;
+  padding-right: 5%;
+
+  text-align: right;
+}
+
+.card , time, .description.param {
+  user-select: none;
+}

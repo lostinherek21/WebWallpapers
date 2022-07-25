@@ -1,0 +1,25 @@
+{
+	"contentrating" : "Everyone",
+	"description" : "generate random quotes\n\nupdate the config , like setting background img , font color size, stuff like that . in the future...",
+	"file" : "index.html",
+	"general" : 
+	{
+		"properties" : 
+		{
+			"schemecolor" : 
+			{
+				"order" : 0,
+				"text" : "ui_browse_properties_scheme_color",
+				"type" : "color",
+				"value" : "0 0 0"
+			}
+		}
+	},
+	"preview" : "preview.jpg",
+	"tags" : [ "Abstract" ],
+	"title" : "Quotes Generator",
+	"type" : "web",
+	"version" : 1,
+	"workshopid" : "2840244269",
+	"workshopurl" : "steam://url/CommunityFilePage/2840244269"
+}

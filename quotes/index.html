@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="a demo of blury glass card, css">
+  <meta name="author" content="zxx">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glass Cards</title>
+  <link rel="stylesheet" href="./style.css" type="text/css">
+</head>
+<body>
+  <header>
+  </header>
+
+  <main>
+    <div class="container">
+
+
+      <div class="clock">
+        <time>12:11</time>
+      </div>
+
+
+      <div class="cards flex">
+
+        <div class="card">
+          <blockquote cite="">
+          </blockquote>
+          <cite>-- ddw</cite>
+        </div>
+      </div>
+
+
+      
+      <div class="description">
+        <p class="description param">🤍 <time datetime="2022-07-24">made 2022-07-24 by zxx</time></p>
+      </div>
+      
+
+    </div>
+  </main>
+
+  <footer>
+  </footer>
+
+  <script src="./index.js"></script>
+  <script src="./src/lib/Vanillatile.js"></script>
+  <script src="./wallpaperConfig.js"></script>
+  <script>
+    let tile = document.querySelector('.cards');
+    let vt = new VanillaTilt(tile,{
+      scale: 1,
+      speed: 100,
+      transition: true,
+      perspective: 1000,
+      easing: "cubic-bezier(.03,.98,.52,.99)",
+      glare: false,
+      "max-glare": .02,
+    })
+  </script>
+</body>
+</html>

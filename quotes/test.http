@@ -1,0 +1,2 @@
+GET http://api.forismatic.com/api/1.0/getQuote&key=457653&format=xml&lang=en HTTP/1.1
+Content-Type: application/json
